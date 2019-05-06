@@ -30,7 +30,7 @@ Work on a Vue instance:
 
 
 ## Options
-
+![image](http://github.com/lilu1814/images-repository/raw/master/1557139978333.jpg)
 ### Props
 
 | Option | Type | Description | Default |
