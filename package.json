@@ -1,8 +1,8 @@
 {
   "name": "dragenli-ui",
   "description": "A Vue.js ui project",
-  "version": "1.0.4",
-  "author": "lilu <lilu@zenmen.com>",
+  "version": "1.0.5",
+  "author": "lilu <lilu1814@163.com>",
   "license": "MIT",
   "private": false,
   "main": "dist/dragenli-ui.js",

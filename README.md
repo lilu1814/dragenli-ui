@@ -1,18 +1,53 @@
-# mobile-simulator
+# dragenli-ui
 
-> A Vue.js project
+dragenli-ui is a ui for Vue.js.
 
-## Build Setup
+## Install
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
+```bash
+$ npm install dragenli-ui
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Import
+
+### Import using module
+
+Import components to your project:
+
+``` js
+require('dragenli-ui/dist/dragenli-ui.css');
+```
+
+### Import using script tag
+
+``` html
+<script src="../node-modules/dragenli-ui/dist/dragenli-ui.js"></script>
+```
+
+## Usage
+
+Work on a Vue instance:
+
+
+## Options
+
+### Props
+
+| Option | Type | Description | Default |
+| ----- | ----- | ----- | ----- |
+| src | String | url of page | '' |
+| textContent | String | content of page | '' |
+
+## FAQ
+
+## Development
+
+Watching with hot-reload:
+
+```bash
+$ npm run dev
+```
+
+## License
+
+MIT
