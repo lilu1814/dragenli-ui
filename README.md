@@ -12,12 +12,6 @@ $ npm install dragenli-ui
 
 ### Import using module
 
-Import components to your project:
-
-``` js
-require('dragenli-ui/dist/dragenli-ui.css');
-```
-
 ### Import using script tag
 
 ``` html
