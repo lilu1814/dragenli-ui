@@ -24,7 +24,7 @@ Work on a Vue instance:
 
 
 ## Options
-
+![image](https://raw.githubusercontent.com/lilu1814/images-repository/master/1557139978333.jpg)
 ### Props
 
 | Option | Type | Description | Default |
