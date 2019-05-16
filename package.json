@@ -14,6 +14,11 @@
     "url-loader": "^1.1.2",
     "vue": "^2.5.11"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
@@ -32,6 +37,9 @@
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
+    "webpack-dev-server": "^2.9.1",
+    "husky": "^1.2.1",
+    "lint-staged": "^8.1.0",
+    "pretty-quick": "^1.10.0"
   }
 }

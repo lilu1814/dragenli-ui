@@ -1,5 +1,7 @@
 <template>
-  <button :class="[buttonType, buttonClass]">Bubble</button>
+  <button @click="handlerClick" :class="[buttonType, buttonClass]">
+    <slot />
+  </button>
 </template>
 
 <script>
@@ -27,11 +29,21 @@ export default {
       }
     }
   },
-  methods: {}
+  methods: {
+    handlerClick(event) {
+      this.$emit("click", event);
+    }
+  },
+  created() {
+    console.log(this);
+  }
 };
 </script>
 
 <style lang="scss" scoped>
+button {
+  height: 50px;
+}
 .bubble {
   z-index: 1;
   position: relative;

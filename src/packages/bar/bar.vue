@@ -1,5 +1,5 @@
 <template>
-  <span :class="[barType]">
+  <span :class="['bar', barType]">
     <slot />
   </span>
 </template>
@@ -22,6 +22,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.bar {
+  height: 25px;
+}
 .model-1 {
   position: relative;
   &::before,

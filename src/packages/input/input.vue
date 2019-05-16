@@ -1,17 +1,28 @@
 <template>
-  <div :class="[inputType]">
+  <div :class="['input-outer', inputType]">
     <input
       type="text"
       v-model="val"
       @input="handleInput"
       placeholder="Input Outline"
     />
-    <div v-if="inputType === 'anticlockwise' || inputType === 'trace'">
-      <span class="bottom"></span>
-      <span class="right"></span>
-      <span class="top"></span>
-      <span class="left"></span>
-    </div>
+    <span
+      v-if="inputType === 'anticlockwise' || inputType === 'trace'"
+      class="bottom"
+    ></span>
+    <span
+      v-if="inputType === 'anticlockwise' || inputType === 'trace'"
+      class="right"
+    ></span>
+    <span
+      v-if="inputType === 'anticlockwise' || inputType === 'trace'"
+      class="top"
+    ></span>
+    <span
+      v-if="inputType === 'anticlockwise' || inputType === 'trace'"
+      class="left"
+    ></span>
+
     <span
       class="line"
       v-if="inputType === 'underline' || inputType === 'underline2'"
@@ -59,6 +70,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.input-outer {
+  height: 40px;
+  input {
+    height: 36px;
+  }
+}
 .anticlockwise {
   position: relative;
   input {
@@ -67,7 +84,7 @@ export default {
     font-size: inherit;
     font-family: inherit;
     background-color: hsl(246, 41%, 18%);
-    padding: 0.35em 0.45em;
+    padding: 1px 1px;
     border: 1px solid transparent;
     transition: background-color 0.3s ease-in-out;
     &:focus {
@@ -138,7 +155,7 @@ export default {
     font-size: inherit;
     font-family: inherit;
     background-color: hsl(246, 41%, 18%);
-    padding: 0.35em 0.45em;
+    padding: 1px 2px;
     border: 1px solid transparent;
     transition: background-color 0.3s ease-in-out;
     &:focus {
