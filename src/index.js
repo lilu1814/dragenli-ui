@@ -1,10 +1,11 @@
 import Simulator from "./packages/simulator/index.js";
 import Button from "./packages/button/index.js";
+import D3box from "./packages/3dbox/index.js";
 import Bar from "./packages/bar/index.js";
 import Input from "./packages/input/index.js";
 import Loading from "./packages/loading/index.js";
 
-const components = [Simulator, Button, Bar, Input];
+const components = [Simulator, Button, Bar, Input, D3box];
 const plugins = [Loading];
 
 const install = function(Vue, opts = {}) {
