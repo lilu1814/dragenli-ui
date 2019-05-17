@@ -39,7 +39,7 @@
       (a.o = function(t, a) {
         return Object.prototype.hasOwnProperty.call(t, a);
       }),
-      (a.p = "./"),
+      (a.p = "/dist/"),
       a((a.s = 9))
     );
   })([
