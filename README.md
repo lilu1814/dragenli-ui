@@ -8,29 +8,24 @@ dragenli-ui is a ui for Vue.js.
 $ npm install dragenli-ui
 ```
 
-## Import
+## Quick Start
 
-### Import using module
+```javascript
+import Vue from 'vue'
+import dragenli-ui from 'dragenli-ui'
 
-### Import using script tag
+Vue.use(dragenli-ui)
 
-``` html
-<script src="../node-modules/dragenli-ui/dist/dragenli-ui.js"></script>
+// or
+import {
+  Simulator,
+  Button
+  // ...
+} from 'dragenli-ui'
+
+Vue.component(Simulator.name, Simulator)
+Vue.component(Button.name, Button)
 ```
-
-## Usage
-
-Work on a Vue instance:
-
-
-## Options
-![image](https://raw.githubusercontent.com/lilu1814/images-repository/master/1557139978333.jpg)
-### Props
-
-| Option | Type | Description | Default |
-| ----- | ----- | ----- | ----- |
-| src | String | url of page | '' |
-| textContent | String | content of page | '' |
 
 ## FAQ
 
