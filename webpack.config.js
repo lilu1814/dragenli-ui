@@ -5,7 +5,7 @@ module.exports = {
   entry: NODE_ENV == "development" ? "./src/main.js" : "./src/index.js",
   output: {
     path: path.resolve(__dirname, "./dist"),
-    publicPath: "./dist/",
+    publicPath: NODE_ENV == "development" ? "/dist/" : "./",
     filename: "dragenli-ui.js",
     library: "dragenli-ui",
     libraryTarget: "umd",
