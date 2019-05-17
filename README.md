@@ -27,6 +27,8 @@ Vue.component(Simulator.name, Simulator)
 Vue.component(Button.name, Button)
 ```
 
+For more information, please refer to [Quick Start](https://lilu1814.github.io/dragenli-ui.github.io/index.html) in our documentation.
+
 ## FAQ
 
 ## Development
